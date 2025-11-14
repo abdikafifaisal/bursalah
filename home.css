@@ -1,0 +1,576 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0; 
+}
+
+.container {
+    max-width: 100vw;
+    height: 100vh;
+    background-color: #4a5a73; 
+    position: relative; 
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    color: #333;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 2px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-links a.active {
+    color: #007bff; 
+    font-weight: 700;
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #007bff;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px); 
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.highlight {
+    color: #9cb5d8; 
+}
+
+/* --- Button Styling --- */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 40px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.talk-widget {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 40px 20px 80px; 
+    text-align: center;
+}
+
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 50px; 
+    line-height: 1.5;
+}
+
+/* --- Features Grid Layout --- */
+.features-grid {
+    display: grid;
+    /* Create 4 equal columns */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden; 
+    text-align: left;
+    
+}
+
+.image-placeholders {
+    
+    height: 200px; 
+    background-color: #eee; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #666;
+    background-image: url('cap1.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+.image-placeholder1 {
+   
+    height: 200px; 
+    background-color: #eee; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #666;
+    background-image: url('teacher.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+.image-placeholder2 {
+    
+    height: 200px; 
+    background-color: #eee; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #666;
+    background-image: url('fotball.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.image-placeholder3 {
+    
+    height: 200px; 
+    background-color: #eee; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #666;
+    background-image: url('labgirl.webp'); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.card-content {
+    padding: 20px;
+    text-align: center; 
+}
+
+.card-icon {
+    font-size: 30px;
+    color: #007bff; 
+    background-color: #e6f0ff; 
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+    text-align: center;
+}
+
+
+.talk-widget {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/
+@media (max-width: 992px) {
+    .features-grid {
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .features-grid {
+        /* Switch to 1 column on small screens */
+        grid-template-columns: 1fr;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+}
+/* --- Achievements Section Styling --- */
+.achievements-section {
+    /* The main blue background color */
+    background-color: #244b8f; 
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.achievements-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.achievements-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.achievements-subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+    opacity: 0.9;
+}
+
+/* --- Achievements Grid Layout --- */
+.achievements-grid {
+    display: grid;
+    /* Create 4 equal columns */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* --- Individual Item Styling --- */
+.achievement-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievement-icon {
+    
+    font-size: 36px;
+    color: white;
+    background-color: transparent;
+    border: 3px solid #8ba8d4; /
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    
+}
+
+.achievement-number {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.achievement-label {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    .achievements-grid {
+        /* Switch to 2 columns on medium screens */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .achievements-grid {
+        /* Switch to 1 column on small screens */
+        grid-template-columns: 1fr;
+    }
+    .achievements-title {
+        font-size: 36px;
+    }
+}
+/* --- Footer Styling --- */
+.main-footer {
+    /* Dark blue/black background color */
+    background-color: #202c40; 
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-col {
+    padding-right: 20px;
+}
+
+/* Set widths for the columns (Col 1 is wider) */
+.footer-col-info {
+    flex: 2; /* Takes up more space */
+    max-width: 400px;
+}
+
+.footer-col-links,
+.footer-col-contact {
+    flex: 1; 
+    min-width: 200px;
+}
+
+/* --- Logo and Title Styles (Column 1) --- */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #9cb5d8; /* Light blue color for school name */
+}
+
+.footer-logo p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 2px;
+}
+
+.footer-logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-icon {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.mission-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+/* --- Social Links --- */
+.social-links a {
+    color: white;
+    font-size: 16px;
+    margin-right: 15px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 1;
+}
+
+/* --- Quick Links & Contact Info Styles (Columns 2 & 3) --- */
+.footer-col h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a,
+.footer-col-contact address p {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    line-height: 1.6;
+    font-style: normal; /* Removes italic from address */
+}
+
+.footer-col ul li a:hover {
+    opacity: 1;
+}
+
+.footer-col-contact address p {
+    margin-bottom: 10px;
+}
+
+/* --- Footer Bottom (Copyright) --- */
+.footer-bottom {
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    .footer-content-wrapper {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .footer-col-info {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        max-width: none;
+    }
+    
+    .footer-col-links,
+    .footer-col-contact {
+        flex: 1 1 45%; /* Two columns side-by-side */
+        min-width: unset;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-col-links,
+    .footer-col-contact {
+        flex: 1 1 100%; /* Stack all columns on tiny screens */
+    }
+}

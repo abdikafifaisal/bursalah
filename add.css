@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0; /* Light background for the overall page */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    /* Background color should match the original screenshot (very light gray) */
+    background-color: rgba(255, 255, 255, 0.95); 
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    color: #333;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 2px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* --- ACTIVE LINK STYLES (Focus on these) --- */
+.nav-links a.active {
+    color: #007bff; /* Active link color */
+    font-weight: 700;
+}
+
+/* Draws the blue line underneath the active link */
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #007bff;
+}
+/* ===== RESET ===== */
+/* ===== HERO SECTION ===== */
+.admission-hero {
+    background: url("grad.jpg") center/cover no-repeat;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admission-hero .overlay {
+    background: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 100%;
+    padding: 0 10%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admission-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.admission-hero p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    max-width: 550px;
+}
+
+.apply-btn {
+    width: fit-content;
+    padding: 12px 28px;
+    background: #1d6bfd;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.apply-btn:hover {
+    background: #0e52d1;
+}
+
+/* ===== ADMISSION PROCESS ===== */
+.admission-process {
+    text-align: center;
+    padding: 60px 10%;
+    background: #f6f7f9;
+}
+
+.admission-process h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.admission-process .subtitle {
+    margin-top: 10px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.process-container {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.process-step {
+    background: #fff;
+    padding: 30px 20px;
+    width: 22%;
+    min-width: 240px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    background: #eaf2ff;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box i {
+    font-size: 28px;
+    color: #1d6bfd;
+}
+
+.process-step h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.process-step p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .process-step {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .process-step {
+        width: 100%;
+    }
+
+    .admission-hero h1 {
+        font-size: 2.2rem;
+    }
+}
+/* ===== Application Form Section ===== */
+.application-section {
+    padding: 60px 10%;
+    background: #ffffff;
+}
+
+.form-container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.form-container .subtitle {
+    text-align: center;
+    color: #666;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+/* ===== Form Rows ===== */
+.application-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+/* ===== Labels ===== */
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* ===== Inputs and Select ===== */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d7dce5;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #1a73e8;
+}
+
+/* ===== Textarea ===== */
+.form-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #888;
+}
+
+/* ===== Button ===== */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #0c59c6;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .application-form .form-row {
+        flex-direction: column;
+    }
+
+    .form-container {
+        padding: 25px;
+    }
+}
+.main-footer {
+    /* Dark blue/black background color */
+    background-color: #202c40; 
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-col {
+    padding-right: 20px;
+}
+
+/* Set widths for the columns (Col 1 is wider) */
+.footer-col-info {
+    flex: 2; /* Takes up more space */
+    max-width: 400px;
+}
+
+.footer-col-links,
+.footer-col-contact {
+    flex: 1; 
+    min-width: 200px;
+}
+
+/* --- Logo and Title Styles (Column 1) --- */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #9cb5d8; /* Light blue color for school name */
+}
+
+.footer-logo p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 2px;
+}
+
+.footer-logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-icon {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.mission-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+/* --- Social Links --- */
+.social-links a {
+    color: white;
+    font-size: 16px;
+    margin-right: 15px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 1;
+}
+
+/* --- Quick Links & Contact Info Styles (Columns 2 & 3) --- */
+.footer-col h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a,
+.footer-col-contact address p {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    line-height: 1.6;
+    font-style: normal; /* Removes italic from address */
+}
+
+.footer-col ul li a:hover {
+    opacity: 1;
+}
+
+.footer-col-contact address p {
+    margin-bottom: 10px;
+}
+
+/* --- Footer Bottom (Copyright) --- */
+.footer-bottom {
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    .footer-content-wrapper {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .footer-col-info {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        max-width: none;
+    }
+    
+    .footer-col-links,
+    .footer-col-contact {
+        flex: 1 1 45%; /* Two columns side-by-side */
+        min-width: unset;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-col-links,
+    .footer-col-contact {
+        flex: 1 1 100%; /* Stack all columns on tiny screens */
+    }
+}
