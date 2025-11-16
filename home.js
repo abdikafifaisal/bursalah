@@ -1,7 +1,6 @@
-// ---------- ACHIEVEMENT COUNTER ----------
 
 const counters = document.querySelectorAll('.achievement-number');
-let started = false; // ensures animation runs once
+let started = false; 
 
 function startCount() {
     counters.forEach(counter => {
@@ -13,8 +12,7 @@ function startCount() {
         if (originalText.includes("%")) suffix = "%";
 
         let count = 0;
-        const speed = 50; // smaller = faster
-
+        const speed = 50; 
         const updateCount = () => {
             if (count < target) {
                 count++;
@@ -29,7 +27,7 @@ function startCount() {
     });
 }
 
-// Detect when the section is visible
+
 const achievementsSection = document.querySelector('.achievements-section');
 const observer = new IntersectionObserver(
     (entries) => {
