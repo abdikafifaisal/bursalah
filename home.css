@@ -317,7 +317,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/
+
 @media (max-width: 992px) {
     .features-grid {
         
@@ -327,16 +327,14 @@ body {
 
 @media (max-width: 576px) {
     .features-grid {
-        /* Switch to 1 column on small screens */
         grid-template-columns: 1fr;
     }
     .section-title {
         font-size: 28px;
     }
 }
-/* --- Achievements Section Styling --- */
 .achievements-section {
-    /* The main blue background color */
+    
     background-color: #244b8f; 
     color: white;
     padding: 80px 20px;
@@ -360,16 +358,14 @@ body {
     opacity: 0.9;
 }
 
-/* --- Achievements Grid Layout --- */
 .achievements-grid {
     display: grid;
-    /* Create 4 equal columns */
+    
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin-top: 50px;
 }
 
-/* --- Individual Item Styling --- */
 .achievement-item {
     padding: 20px;
     display: flex;
@@ -382,7 +378,7 @@ body {
     font-size: 36px;
     color: white;
     background-color: transparent;
-    border: 3px solid #8ba8d4; /
+    border: 3px solid #8ba8d4; 
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -405,26 +401,26 @@ body {
     opacity: 0.8;
 }
 
-/* --- Responsive Adjustments --- */
+
 @media (max-width: 992px) {
     .achievements-grid {
-        /* Switch to 2 columns on medium screens */
+        
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 576px) {
     .achievements-grid {
-        /* Switch to 1 column on small screens */
+        
         grid-template-columns: 1fr;
     }
     .achievements-title {
         font-size: 36px;
     }
 }
-/* --- Footer Styling --- */
+
 .main-footer {
-    /* Dark blue/black background color */
+    
     background-color: #202c40; 
     color: white;
     font-family: Arial, sans-serif;
@@ -444,9 +440,9 @@ body {
     padding-right: 20px;
 }
 
-/* Set widths for the columns (Col 1 is wider) */
+
 .footer-col-info {
-    flex: 2; /* Takes up more space */
+    flex: 2; 
     max-width: 400px;
 }
 
@@ -456,7 +452,7 @@ body {
     min-width: 200px;
 }
 
-/* --- Logo and Title Styles (Column 1) --- */
+
 .footer-logo {
     display: flex;
     align-items: center;
@@ -467,7 +463,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     line-height: 1.1;
-    color: #9cb5d8; /* Light blue color for school name */
+    color: #9cb5d8; 
 }
 
 .footer-logo p {
@@ -493,7 +489,7 @@ body {
     opacity: 0.8;
 }
 
-/* --- Social Links --- */
+
 .social-links a {
     color: white;
     font-size: 16px;
@@ -506,7 +502,6 @@ body {
     opacity: 1;
 }
 
-/* --- Quick Links & Contact Info Styles (Columns 2 & 3) --- */
 .footer-col h3 {
     font-size: 20px;
     font-weight: 600;
@@ -530,7 +525,7 @@ body {
     opacity: 0.8;
     transition: opacity 0.3s;
     line-height: 1.6;
-    font-style: normal; /* Removes italic from address */
+    font-style: normal; 
 }
 
 .footer-col ul li a:hover {
@@ -541,7 +536,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* --- Footer Bottom (Copyright) --- */
+
 .footer-bottom {
     padding: 20px;
     text-align: center;
@@ -549,7 +544,7 @@ body {
     opacity: 0.6;
 }
 
-/* --- Responsive Adjustments --- */
+
 @media (max-width: 992px) {
     .footer-content-wrapper {
         flex-wrap: wrap;
@@ -557,13 +552,13 @@ body {
     }
 
     .footer-col-info {
-        flex: 1 1 100%; /* Full width on smaller screens */
+        flex: 1 1 100%; 
         max-width: none;
     }
     
     .footer-col-links,
     .footer-col-contact {
-        flex: 1 1 45%; /* Two columns side-by-side */
+        flex: 1 1 45%; 
         min-width: unset;
     }
 }
@@ -571,6 +566,6 @@ body {
 @media (max-width: 576px) {
     .footer-col-links,
     .footer-col-contact {
-        flex: 1 1 100%; /* Stack all columns on tiny screens */
+        flex: 1 1 100%; 
     }
 }
