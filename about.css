@@ -69,6 +69,7 @@ body {
     padding: 5px 0;
     position: relative;
     transition: color 0.3s;
+    
 }
 
 .nav-links a.active {
